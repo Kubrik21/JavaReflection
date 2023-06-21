@@ -1,6 +1,6 @@
 package com.example.javareflectionexample;
 
-public class Osoba {
+public class Osoba implements jezyk{
  private String imie;
  private String nazwisko;
  public int wiek;
@@ -20,6 +20,11 @@ public class Osoba {
      System.out.println("Wywołano metodę klasy Osoba");
      System.out.println(imie+ " " + nazwisko);
      System.out.println("Wiek: " + wiek);
+ }
+
+
+ public void mow(String param){
+     System.out.println(param);
  }
 
 }
